@@ -6,6 +6,8 @@ use Illuminate\Support\Str;
 
 trait Uuid
 {
+    abstract public function getKeyName();
+
     protected static function boot(): void
     {
         parent::boot();
