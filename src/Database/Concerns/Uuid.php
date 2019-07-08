@@ -11,7 +11,9 @@ trait Uuid
         parent::boot();
 
         static::creating(function (self $model): void {
-            $model->{$model->getKeyName()} = $model->generateUuid();
+            if (empty($model->{$model->getKeyName()})) {
+                $model->{$model->getKeyName()} = $model->generateUuid();
+            }
         });
     }
 

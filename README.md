@@ -1,5 +1,10 @@
 # Laravel eloquent model uuid
-
+[![Latest Stable Version](https://poser.pugx.org/glorand/laravel-eloquent-model-uuid/v/stable)](https://packagist.org/packages/glorand/laravel-model-settings)
+[![Build Status](https://travis-ci.com/glorand/laravel-eloquent-model-uuid.svg?branch=master)](https://travis-ci.com/glorand/laravel-eloquent-model-uuid)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE.md)
+[![Build Status](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/build.png?b=master)](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/build-status/master)
+[![Code Intelligence Status](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/?branch=master)
 A simple solution for providing UUID support for the IDs of your Eloquent models.
 
 ## Installation
@@ -11,6 +16,14 @@ composer require glorand/laravel-eloquent-model-uuid
 ```
 
 ## Usage
+Let us start on the database side of things.
+```php
+$table->uuid('id');
+$table->primary('id');
+//OR
+$table->uuid('id')->primary();
+```
+
 Instead of extending the standard Laravel model class, 
 extend from the model class provided by this package:
 ```php
