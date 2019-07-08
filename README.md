@@ -5,6 +5,7 @@
 [![Build Status](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/build.png?b=master)](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/build-status/master)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/?branch=master)
+
 A simple solution for providing UUID support for the IDs of your Eloquent models.
 
 ## Installation
