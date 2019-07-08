@@ -1,0 +1,47 @@
+{
+    "name": "glorand/laravel-eloquent-model-uuid",
+    "description": "A simple solution for providing UUID support for the IDs of your Eloquent models.",
+    "keywords": [
+        "glorand",
+        "laravel",
+        "eloquent",
+        "uuid",
+        "laravel-eloquent-model-uuid"
+    ],
+    "homepage": "https://github.com/glorand/laravel-eloquent-model-uuid",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Gombos Lorand",
+            "email": "gombos.lorand@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3",
+        "illuminate/database": "~5.5.0|~5.6.0|~5.7.0|~5.8.0",
+        "illuminate/support": "~5.5.0|~5.6.0|~5.7.0|~5.8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "orchestra/testbench": "~3.8.0",
+        "friendsofphp/php-cs-fixer": "^2.15"
+    },
+    "autoload": {
+        "psr-4": {
+            "Glorand\\LaravelEloquentModelUuid\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Glorand\\LaravelEloquentModelUuid\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
