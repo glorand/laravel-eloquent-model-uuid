@@ -6,6 +6,7 @@ use Glorand\LaravelEloquentModelUuid\Tests\Models\UserWithUuid;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
+use Illuminate\Support\Arr;
 
 class TestCase extends OrchestraTestCase
 {
@@ -20,7 +21,7 @@ class TestCase extends OrchestraTestCase
     protected function checkRequirements()
     {
         collect($this->getAnnotations())->filter(function ($location) {
-            return in_array('!Travis', array_get($location, 'requires', []));
+            return in_array('!Travis', Arr::get($location, 'requires', []));
         })->each(function ($location) {
             $this->markTestSkipped('Travis will not run this test.');
         });
