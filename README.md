@@ -2,7 +2,7 @@
 [![Latest Stable Version](https://poser.pugx.org/glorand/laravel-eloquent-model-uuid/v/stable)](https://packagist.org/packages/glorand/laravel-model-settings)
 [![Build Status](https://travis-ci.com/glorand/laravel-eloquent-model-uuid.svg?branch=master)](https://travis-ci.com/glorand/laravel-eloquent-model-uuid)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat)](LICENSE.md)
-[![Build Status](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/build.png?b=master)](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/build-status/master)
+[![StyleCI](https://github.styleci.io/repos/194731086/shield?branch=master)](https://github.styleci.io/repos/194731086)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/?branch=master)
 
@@ -25,6 +25,7 @@ $table->primary('id');
 $table->uuid('id')->primary();
 ```
 
+### Use model class provided by this package 
 Instead of extending the standard Laravel model class, 
 extend from the model class provided by this package:
 ```php
@@ -37,7 +38,7 @@ class Entity extends Model
 }
 ```
 
-Use Trait on model class:
+### Use Trait on model class:
 ```php
 <?php
 use Illuminate\Database\Eloquent\Model;
