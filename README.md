@@ -5,6 +5,7 @@
 [![StyleCI](https://github.styleci.io/repos/194731086/shield?branch=master)](https://github.styleci.io/repos/194731086)
 [![Code Intelligence Status](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/glorand/laravel-eloquent-model-uuid/?branch=master)
 
 A simple solution for providing UUID support for the IDs of your Eloquent models.
 

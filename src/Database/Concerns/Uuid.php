@@ -19,7 +19,7 @@ trait Uuid
         });
     }
 
-    protected function generateUuid(): string
+    public function generateUuid(): string
     {
         return Str::uuid()->toString();
     }
