@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-eloquent-model-uuid` will be documented in this file
 
+## 2.1.0 - 2020-03-03
+
+- add support for Laravel 7
+
 ## 2.0.1 - 2020-02-03
 
 - Make public generate UUID
