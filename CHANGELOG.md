@@ -2,6 +2,10 @@
 
 All notable changes to `laravel-eloquent-model-uuid` will be documented in this file
 
+## 3.0.0 - 2020-11-23
+
+- add support for Laravel 8
+
 ## 2.1.0 - 2020-03-03
 
 - add support for Laravel 7
