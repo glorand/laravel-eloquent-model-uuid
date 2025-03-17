@@ -8,7 +8,7 @@ use Illuminate\Support\Str;
 class ModelWithUuidTest extends TestCase
 {
     /** @test */
-    public function testModelWithUuid()
+    public function test_model_with_uuid()
     {
         /** @var UserWithUuid $testModel */
         $testModel = UserWithUuid::query()->first();

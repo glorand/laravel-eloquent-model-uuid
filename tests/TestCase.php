@@ -4,13 +4,13 @@ namespace Glorand\LaravelEloquentModelUuid\Tests;
 
 use Glorand\LaravelEloquentModelUuid\Tests\Models\UserWithUuid;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Schema;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
-use Illuminate\Support\Arr;
 
 class TestCase extends OrchestraTestCase
 {
-    public function setUp(): void
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -37,7 +37,7 @@ class TestCase extends OrchestraTestCase
     {
         collect($tableNames)->each(function (string $tableName) {
             Schema::create($tableName, function (Blueprint $table) use ($tableName) {
-                if ('users_with_uuid' === $tableName) {
+                if ($tableName === 'users_with_uuid') {
                     $table->uuid('id')->primary();
                 } else {
                     $table->primary('id');
